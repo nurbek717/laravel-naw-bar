@@ -32,7 +32,6 @@ Route::get('/users', function () {
 
 Route::get('/user/{id}', function ($id) {
 
-// comme
 
     $users = [
         [   'id' => 1 ,

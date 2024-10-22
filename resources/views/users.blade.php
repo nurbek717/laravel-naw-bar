@@ -7,7 +7,7 @@
 
  <a href="/user/{{$user ['id'] }}" class="text-blue-500 hover:underine">
        <li>
-        {{$user['title']}}:{{$user['salary']}}
+        {{$user['name']}}
        </li>
 </a>
       

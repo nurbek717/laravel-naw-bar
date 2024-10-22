@@ -3,7 +3,9 @@
      User page
     </x-slot:heading>
 
-    <h1> Titl:  {{$user['title']}}</h1>
+    <h1> Name:  {{$user['name']}}</h1>
     
-    <h4> Salary: {{$user['salary']}}</h4>
+    <h2> Age: {{$user['age']}}</h2>
+    <h3> Adres: {{$user['adres']}}</h3>
+    <h4> Workplace: {{$user['workplace']}}</h4>
 </x-layout>

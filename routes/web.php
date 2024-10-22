@@ -10,18 +10,37 @@ Route::get('/users', function () {
 
     $users = [
         [   'id' => 1 ,
-            'title' => "Director",
-            'salary' => "50.000$"
-        ],
-        [   'id'  => 2 ,
-            'title' => "Programmer",
-            'salary' => "35.000$"
-        ],
-        [    'id' =>3,
-            'title' => "Teacher",
-            'salary' => "40.000$"
-        ],
+        'name' => "Po'latjon",
+        'age' => "21",
+        'adres' => "Qashqadaryo",
+        'workplace' => "Dasturchi"
+    ],
+    [   'id'  => 2 ,
+        'name' => "Nurbek",
+        'age' => "23",
+        'adres' => "Jizzah",
+        'workplace' => "O'qtuvchi"
+    ],
+    [    'id' =>3,
+        'name' => "Otabek",
+        'age' => "23",
+        'adres' => "Samarqand",
+        'workplace' => "Taxi"
+    ],
+    [    'id' =>4,
+        'name' => "Sunnatulla",
+        'age' => "22",
+        'adres' => "Toshkent",
+        'workplace' => "Dezainer"
+    ],
+    [    'id' =>5,
+        'name' => "Mirjalol",
+        'age' => "19",
+        'adres' => "Buxoro",
+        'workplace' => "Doctor"
+    ],
     ];
+
 
     return view('/users' , [
         'users' => $users ,
@@ -35,17 +54,35 @@ Route::get('/user/{id}', function ($id) {
 
     $users = [
         [   'id' => 1 ,
-            'title' => "Director",
-            'salary' => "50.000$"
-        ],
-        [   'id'  => 2 ,
-            'title' => "Programmer",
-            'salary' => "35.000$"
-        ],
-        [    'id' =>3,
-            'title' => "Teacher",
-            'salary' => "40.000$"
-        ],
+        'name' => "Po'latjon",
+        'age' => "21",
+        'adres' => "Qashqadaryo",
+        'workplace' => "Dasturchi"
+    ],
+    [   'id'  => 2 ,
+        'name' => "Nurbek",
+        'age' => "23",
+        'adres' => "Jizzah",
+        'workplace' => "O'qtuvchi"
+    ],
+    [    'id' =>3,
+        'name' => "Otabek",
+        'age' => "23",
+        'adres' => "Samarqand",
+        'workplace' => "Taxi"
+    ],
+    [    'id' =>4,
+        'name' => "Sunnatulla",
+        'age' => "22",
+        'adres' => "Toshkent",
+        'workplace' => "Dezainer"
+    ],
+    [    'id' =>5,
+        'name' => "Mirjalol",
+        'age' => "19",
+        'adres' => "Buxoro",
+        'workplace' => "Doctor"
+    ],
     ];
 
 

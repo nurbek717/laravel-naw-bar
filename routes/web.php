@@ -8,7 +8,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-
 //users da modellar bilanishlash
 
 Route::get('/users', function () {

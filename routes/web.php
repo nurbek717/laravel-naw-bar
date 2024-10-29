@@ -2,15 +2,20 @@
 //chaqirib olish 
 use Illuminate\Support\Facades\Route;
 use App\Models\Student;
+use App\Models\Car;
+use App\Models\Laptop;
 
 
 Route::get('/', function () {
+
+    
     return view('home');
 });
 
 //users da modellar bilanishlash
 
 Route::get('/users', function () {
+
     $users = Student::all();
     return view('/users' , [
         'users' => $users ,
@@ -27,16 +32,34 @@ Route::get('/user/{id}', function ($id) {
 
 
 
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
 Route::get('/services', function () {
-    return view('services');
+
+
+    $services = Car::all();
+    return view('/services' , [
+        'services' => $services ,
+    ]);
 });
+
+// Laptop laptops 
+
+Route::get('/service/{id}', function ($id) {
+    $service = Car::find($id);
+    return view ('service', ['service' => $service]);
+});
+
+
 
 Route::get('/portfolio', function () {
-    return view('portfolio');
+
+    $laptops = Laptop::all();
+
+    return view('/portfolio' , [
+        'laptops' => $laptops ,
+    ]);
 });
 
+Route::get('/laptop/{id}', function ($id) {
+    $laptops = Laptop::find($id);
+    return view ('laptop', ['laptop' => $laptops]);
+});

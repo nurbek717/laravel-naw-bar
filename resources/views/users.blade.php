@@ -3,9 +3,9 @@
       Users page
     </x-slot:heading>
 
- @foreach ($users as $user)
+    @foreach ($users as $user)
 
- <a href="/user/{{$user ['id'] }}" class="text-blue-500 hover:underine">
+    <a href="/user/{{$user ['id'] }}" class="text-blue-500 hover:underine">
        <li>
         {{$user['name']}}
        </li>

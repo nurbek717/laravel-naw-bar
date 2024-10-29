@@ -2,5 +2,14 @@
    <x-slot:heading>
         Portfolio page
     </x-slot:heading>
-    <h1> wlecome portfolio page </h1>
+
+    @foreach ($laptops as $laptop)
+
+<a href="/laptop/{{$laptop ['id'] }}" class="text-blue-500 hover:underine">
+      <li>
+          {{$laptop['brand']}}
+     </li>
+</a>
+
+@endforeach 
 </x-layout>
